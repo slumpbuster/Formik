@@ -1,9 +1,10 @@
-# Real Time Bus Tracker
-<img src="./images/publicTransportation.png" height="250px" width="400px"/>
+# A Formik Form
 
 ## Description 
-This shows the location of public vehicles in transit that are associated with the Massachusetts Bay Transportation Authority (MBTA).
-Originally, this showed the progrewssion of stops from MIT to Harvard. Now it will show all vehicles in transit throught the Bay area with information about each vehicle.
+[Formik](https://formik.org/) is the world's most popular open source form library for React and React Native. It is a small library that can help with the three most annoying aspects of creating forms in React:
+- Getting values in and out of the form state
+- Validation and error messages
+- Handling form submission
 
 ## Purpose 
 This was done as an assignment in the MIT course - Full Stack Development with Mern
@@ -12,50 +13,31 @@ This was done as an assignment in the MIT course - Full Stack Development with M
 
 ## Technologies Used 
 - HTML
-- CSS
 - Javascript
 
 ---------
 
 ## Installation 
 - Clone this repository to your local machine
+- Open a command line on your computer and run the command cd path-to-project-root (this should be the actual directory where the repository is located on your local machine)
+- Within the same command-line window, run npm install to install all dependencies
+- Once the command completes successfully, run npm start to start the application in your browser.
 
 ## How to Run 
-- Browse to the directory where you cloned this repository
-- Open the .html file in a browser (Chrome, Edge, Safari, Firefox)
-- When the browser is loaded, all current vehicles associated with the MBA that are in transit will be displayed
-- Initially, to show all vehicles, the map is zoomed out. To zoom, one can either use their scroll mouse, double click on the map, but not a marker, or if using a touch enabed device, use their fingers.
-- The live data of the vehicles is updated every 15 seconds, but not populated to the map. This was left as a manual process. To refresh the location of the vehicles on the map, simply click on the button that states "Update location of public vehicles currently in transit".
-- If you would like to gather more information on a particular vehicle, simply click on it's marker. It will provide you with the vehicle number, it's status, where it is in it's list of stops, it's availalbe occupancy, and the last time the data was updated.
-
-## Generate a Mapbox API key
-1. Create a [Mapbox account](https://account.mapbox.com/auth/signup/?route-to=%22/%22)
-2. Go to [account page](https://account.mapbox.com/) and log in
-3. Scroll down till you see **Access tokens**
-4. Copy the **Default public token**
-5. Replace the **YOUR TOKEN HERE** in the section of code mapboxgl.accessToken = 'YOUR TOKEN HERE'; in the mapanimation.js file
-
----------
-
-## Improvements Made
-- 2022-02-03: Use different color marker for vehicles based on their occupancy: RED: No Occupancy / ORANGE: Close to Full / YELLOW: Few Seats / GREEN: Many Seats
-- 2022-02-03: Changed Map view to Street View for more detail
-- 2022-02-05: Added Legend for Marker Colors
-- 2022-02-05: Added Purple Color Marker for Unknown / Unprovided Occupancy Status
-- 2022-02-05: Removed Occupancy Status from Popup as no longer needed
-- 2022-02-05: Added opacity
-
-## Roadmap of Future Improvements
-- Add the ability to enable/disable refresh as well as setting the interval
-- Add the ability to filter out vehicles by their vehicle numbers
+- When the page is loaded in your browser, fill out the information and click Submit
+- If a non-email entry is added under Username, you will see a red error under the username input field
+- If the password entry is blank, you will see a red error under the password input field
+- If you try to click the submit button without an email and password, nothing occurs
+- If an email and password is entered and validates (see above) and the submit button is clicked, an alert telling you 'Login Successful!' is displayed
 
 ---------
 
 ## Files 
-- **/images/publicTransportation.png** - Used in the Readme file 
-- **index.html** - Start-up file to be opened by browse 
-- **styles.css** - Stylesheet file that positions objects, controls text, colors, and layout
-- **mapanimation.js** - Javascript file manipulating what is occuring in the browser 
+- **/public/index.html** - Start-up file to be opened by browse 
+- **/src/App.js** - Build Form and code for validation and submit
+- **/src/index.css** -  Stylesheet file that positions objects, controls text, colors, and layout
+- **/src/index.js** - Render ReactDOM
+- **package-lock.json | package.json** - packages used/required for page
 
 ---------
 
@@ -63,4 +45,4 @@ This was done as an assignment in the MIT course - Full Stack Development with M
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-[The MIT License (MIT)](https://github.com/slumpbuster/Real-Time-Bus-Tracker-Exercise/blob/main/LICENSE)
+[The MIT License (MIT)](https://github.com/slumpbuster/Formik/blob/main/LICENSE)
