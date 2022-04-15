@@ -33,7 +33,7 @@ This was done as an assignment in the MIT course - Full Stack Development with M
 ---------
 
 ## Files 
-- **/public/index.html** - Start-up file to be opened by browse 
+- **/public/index.html** - Start-up file to be opened by browser
 - **/src/App.js** - Build Form and code for validation and submit
 - **/src/index.css** -  Stylesheet file that positions objects, controls text, colors, and layout
 - **/src/index.js** - Render ReactDOM
